@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Box } from "@mui/material";
+import { Box, Rating } from "@mui/material";
 import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
 
 const rows: GridRowsProp = [
@@ -24,6 +24,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <Box />
+        <Rating name="read-only" value={1} readOnly />
         <DataGrid rows={rows} columns={columns} />
         <a
           className="App-link"
